@@ -1,0 +1,13 @@
+{
+  "@metadata": {
+    "authors": [
+      "Chris Rishel"
+    ]
+  },
+  "sitehistory": "SiteHistory",
+  "sitehistory-extensionname": "SiteHistory",
+  "sitehistory-desc": "Generates historical data for various site statistics",
+  "sitehistory-permissiondenied": "Permission denied",
+  "sitehistory-historyvariable-usersconfirmed-label": "Users confirmed",
+  "sitehistory-historyvariable-usersregistered-label": "Users registered"
+}

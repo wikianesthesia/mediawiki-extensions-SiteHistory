@@ -1,0 +1,52 @@
+{
+  "name": "SiteHistory",
+  "namemsg": "sitehistory-extensionname",
+  "version": "0.1.0",
+  "author": [
+    "Chris Rishel"
+  ],
+  "license-name": "GPL-3.0-or-later",
+  "url": "https://www.mediawiki.org/wiki/Extension:SiteHistory",
+  "descriptionmsg": "sitehistory-desc",
+  "type": "other",
+  "requires": {
+    "MediaWiki": ">= 1.35.0"
+  },
+  "GroupPermissions": {
+    "sysop": {
+      "sitehistory": true
+    }
+  },
+  "config_prefix": "wg",
+  "config": {
+    "SiteHistoryRequireRight": {
+      "value": true
+    }
+  },
+  "AutoloadNamespaces": {
+    "SiteHistory\\": "src/"
+  },
+  "AvailableRights": [
+    "sitehistory"
+  ],
+  "MessagesDirs": {
+    "SiteHistory": [
+      "i18n"
+    ]
+  },
+  "ResourceModules": {
+    "ext.siteHistory.common": {
+      "scripts": [
+        "siteHistory.common/siteHistory.common.js"
+      ]
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "modules",
+    "remoteExtPath": "SiteHistory/modules"
+  },
+  "SpecialPages": {
+    "SiteHistory": "SiteHistory\\Special\\SpecialSiteHistory"
+  },
+  "manifest_version": 2
+}
