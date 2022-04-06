@@ -108,4 +108,8 @@ class SpecialSiteHistory extends SpecialPage {
     protected function getAllHistoryVariables() {
 
     }
+
+    protected function getGroupName() {
+        return 'wiki';
+    }
 }
