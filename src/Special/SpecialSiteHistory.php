@@ -7,6 +7,7 @@ use MWTimestamp;
 use OOUI;
 use SiteHistory\HistoryVariables\Edits;
 use SiteHistory\HistoryVariables\PagesCreated;
+use SiteHistory\HistoryVariables\PracticeGroups;
 use SiteHistory\HistoryVariables\UsersConfirmed;
 use SiteHistory\HistoryVariables\UsersRegistered;
 use SiteHistory\HistoryDataset;
@@ -88,6 +89,7 @@ class SpecialSiteHistory extends SpecialPage {
 
         $historyDataset->addVariable( UsersRegistered::class );
         $historyDataset->addVariable( UsersConfirmed::class );
+        $historyDataset->addVariable( PracticeGroups::class, [], 'Practice groups' );
         $historyDataset->addVariable( PagesCreated::class, [], 'Pages created (all)' );
         $historyDataset->addVariable( PagesCreated::class, [ 'namespaces' => [ 0 ] ], 'Pages created (public)' );
         $historyDataset->addVariable( PagesCreated::class, [ 'namespaces' => [ 7740 ] ], 'Pages created (practice group)' );
